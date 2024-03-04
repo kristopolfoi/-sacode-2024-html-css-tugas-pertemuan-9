@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #f2e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(img-1.png.jpg);
+    background-size:"cover" 
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(img-kristopol\ foi-2.png.jpg);
+    background-size:"cover" 
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(img-kristopol\ foi-3.png.jpg);
+    background-size:"cover" 
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(img-kristopol\ foi-4.png.jpg);
+    background-size:"cover" 
+    background-position: center;
+}
+
+.img-box h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+.img-box:hover{
+    width: 300px;
+    cursor: pointer;
+}
+.img-box:hover{
+    opacity: 1;
+    cursor: 25px;
+}
